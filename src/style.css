@@ -1,0 +1,486 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app .app__footer .app__footer-end, .app .app__footer .app__footer-links .app__footer-links_container, .app .app__footer .app__footer-enquire, .app .app__focus .app__focus-groups .app__focus-groups_container, .app .app__focus .app__focus-growth .app__focus-growth-container, .app .app__focus .app__focus-plans .app__focus-plans-container, .app .app__products .app__products-stories .app__products-stories-container, .app .app__products .app__products-new .app__products-container .card .card-image, .app .app__products .app__products-new .app__products-container .app__products-container_cards, .app .app__header .app__header-achievements ul li, .app .app__header .app__header-achievements, .app .app__header nav .container-fluid .nav-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.app ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.app h4 {
+  text-align: center;
+  color: #243167;
+  text-transform: uppercase;
+}
+.app .app__header .app__header-heading {
+  background-color: #243167;
+  color: #fff;
+  padding: 5px;
+}
+.app .app__header .app__header-heading ul {
+  font-size: 12px;
+  padding-right: 10rem;
+}
+.app .app__header .app__header-heading ul li {
+  border-left: 1px solid #fff;
+  line-height: 14px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.app .app__header .app__header-heading ul li:first-child {
+  border-left: none;
+}
+.app .app__header .app__header-heading ul li:last-child {
+  border-left: none;
+}
+@media screen and (max-width: 768px) {
+  .app .app__header .app__header-heading ul {
+    padding-right: 0;
+    justify-content: center;
+  }
+}
+.app .app__header nav .container-fluid {
+  padding: 0 3rem;
+}
+@media screen and (max-width: 1024px) {
+  .app .app__header nav .container-fluid .navbar-toggler {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  .app .app__header nav .container-fluid .navbar-toggler .navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    color: #243167;
+  }
+}
+.app .app__header nav .container-fluid .navbar-brand {
+  font-size: 24px;
+  font-weight: 500;
+  color: #243167;
+}
+.app .app__header nav .container-fluid .nav-search {
+  border: 1px solid #c3c3c3;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.app .app__header nav .container-fluid .nav-search i {
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 768px) {
+  .app .app__header nav .container-fluid {
+    padding: 0 1.5rem;
+  }
+}
+.app .app__header .carousel .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+}
+.app .app__header .carousel .carousel-item img {
+  height: 460px;
+  object-fit: fill;
+}
+.app .app__header .carousel .carousel-control-next,
+.app .app__header .carousel .carousel-control-prev {
+  width: 7%;
+}
+.app .app__header .carousel .carousel-heading {
+  position: absolute;
+  bottom: 0;
+  right: 120px;
+  background-color: #243167;
+  color: #fff;
+  width: 400px;
+  padding: 20px 40px;
+}
+.app .app__header .carousel .carousel-heading h5 {
+  margin-bottom: 20px;
+}
+.app .app__header .carousel .carousel-heading h5,
+.app .app__header .carousel .carousel-heading h6 {
+  text-transform: uppercase;
+}
+.app .app__header .carousel .carousel-heading p {
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  .app .app__header .carousel .carousel-heading {
+    right: 20px;
+  }
+}
+.app .app__header .app__header-achievements {
+  position: relative;
+  overflow: hidden;
+  margin: 2rem 0;
+}
+.app .app__header .app__header-achievements ul li {
+  position: relative;
+  width: 15rem;
+  height: 200px;
+  flex-direction: column;
+}
+.app .app__header .app__header-achievements ul li:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 50%;
+  width: 1px;
+  background-color: #243167;
+}
+.app .app__header .app__header-achievements ul li:nth-child(2) img {
+  margin-bottom: 15px;
+}
+.app .app__header .app__header-achievements ul li p {
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0 0;
+}
+@media screen and (max-width: 1024px) {
+  .app .app__header .app__header-achievements ul {
+    flex-direction: column;
+  }
+  .app .app__header .app__header-achievements ul li:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 50%;
+    height: 1px;
+    background-color: #243167;
+    transform: translateY(0);
+  }
+}
+.app .app__products .app__products-new {
+  position: relative;
+  height: 260px;
+  background-color: #243167;
+  padding-top: 2rem;
+}
+.app .app__products .app__products-new h4 {
+  color: #fff;
+}
+.app .app__products .app__products-new .app__products-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.app .app__products .app__products-new .app__products-container .app__products-container_cards {
+  gap: 1rem;
+}
+.app .app__products .app__products-new .app__products-container .card {
+  background-color: #f3f3f3;
+  padding: 20px;
+}
+.app .app__products .app__products-new .app__products-container .card .card-image {
+  height: 105px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.app .app__products .app__products-new .app__products-container .card .card-image .card-img-top {
+  object-fit: scale-down;
+}
+.app .app__products .app__products-new .app__products-container .card .card-body {
+  text-align: center;
+  padding: 1rem 0;
+}
+.app .app__products .app__products-new .app__products-container .card .card-body p {
+  font-size: 12px;
+  font-weight: 500;
+}
+.app .app__products .app__products-new .app__products-container .app__products-container_btn {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  border: 1px solid #f3f3f3;
+  color: #243167;
+  margin: 25px auto;
+  padding: 5px;
+  width: 160px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .app .app__products .app__products-new {
+    height: auto;
+    padding-bottom: 1rem;
+  }
+  .app .app__products .app__products-new h4 {
+    margin-bottom: 1.5rem;
+  }
+  .app .app__products .app__products-new .app__products-container {
+    position: relative;
+  }
+  .app .app__products .app__products-new .app__products-container .app__products-container_btn {
+    color: #fff;
+  }
+  .app .app__products .app__products-new .app__products-container_cards {
+    flex-wrap: wrap;
+  }
+}
+.app .app__products .app__products-stories {
+  margin: 15rem 0 5rem;
+}
+.app .app__products .app__products-stories .app__products-stories-heading {
+  padding: 0.5rem;
+}
+.app .app__products .app__products-stories .app__products-stories-container {
+  gap: 1rem;
+}
+.app .app__products .app__products-stories .app__products-stories-container .card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+}
+.app .app__products .app__products-stories .app__products-stories-container h5 {
+  margin-bottom: 2rem;
+}
+.app .app__products .app__products-stories .app__products-stories-container h5,
+.app .app__products .app__products-stories .app__products-stories-container a {
+  font-size: 14px;
+  font-weight: 500;
+}
+.app .app__products .app__products-stories .app__products-stories-container a {
+  color: #46b5d1;
+}
+@media screen and (max-width: 1024px) {
+  .app .app__products .app__products-stories {
+    margin: 1.5rem 0;
+  }
+  .app .app__products .app__products-stories h4 {
+    margin-bottom: 1.5rem;
+  }
+  .app .app__products .app__products-stories .app__products-stories-container {
+    white-space: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  .app .app__products .app__products-stories .app__products-stories-container .card {
+    flex-shrink: 0;
+  }
+}
+.app .app__focus .app__focus-plans {
+  padding: 2rem 0 2.5rem;
+  background-color: #243167;
+}
+.app .app__focus .app__focus-plans h4 {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.app .app__focus .app__focus-plans .app__focus-plans-container {
+  gap: 1.5rem;
+}
+.app .app__focus .app__focus-plans .app__focus-plans-container div {
+  width: 350px;
+  border: 1px solid #fff;
+  position: relative;
+}
+.app .app__focus .app__focus-plans .app__focus-plans-container div h4 {
+  position: absolute;
+  left: 50%;
+  color: #fff;
+  text-align: center;
+}
+.app .app__focus .app__focus-plans .app__focus-plans-container div:nth-child(odd) h4 {
+  top: 10%;
+  transform: translateX(-50%);
+}
+.app .app__focus .app__focus-plans .app__focus-plans-container div:nth-child(even) h4 {
+  bottom: 10%;
+  transform: translateX(-50%);
+}
+.app .app__focus .app__focus-plans .app__focus-plans-container div img {
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .app .app__focus .app__focus-plans .app__focus-plans-container {
+    white-space: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  .app .app__focus .app__focus-plans .app__focus-plans-container div {
+    flex-shrink: 0;
+  }
+}
+.app .app__focus .app__focus-growth {
+  padding: 2rem;
+}
+.app .app__focus .app__focus-growth h4 {
+  margin-bottom: 2rem;
+}
+.app .app__focus .app__focus-growth .app__focus-growth-container {
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.app .app__focus .app__focus-growth .app__focus-growth-container .app__focus-growth-main {
+  width: 600px;
+  height: 330px;
+  position: relative;
+}
+.app .app__focus .app__focus-growth .app__focus-growth-container .app__focus-growth-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: none;
+  object-position: 10%;
+}
+.app .app__focus .app__focus-growth .app__focus-growth-container .app__focus-growth-main .app__focus-growth-main_logo {
+  position: absolute;
+  top: 0;
+  left: 70%;
+  width: 100px;
+}
+.app .app__focus .app__focus-growth .app__focus-growth-container .card {
+  height: 300px;
+  margin-bottom: 30px;
+}
+.app .app__focus .app__focus-growth .app__focus-growth-container .card img {
+  object-fit: none;
+  object-position: 80% 70%;
+}
+.app .app__focus .app__focus-growth .app__focus-growth-container .card img,
+.app .app__focus .app__focus-growth .app__focus-growth-container .card .card-body {
+  flex: 1;
+  position: relative;
+}
+.app .app__focus .app__focus-growth .app__focus-growth-container .card img i,
+.app .app__focus .app__focus-growth .app__focus-growth-container .card .card-body i {
+  font-size: 2rem;
+  color: #e2efff;
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+}
+.app .app__focus .app__focus-growth .app__focus-growth-container .card img p,
+.app .app__focus .app__focus-growth .app__focus-growth-container .card .card-body p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.app .app__focus .app__focus-growth .app__focus-growth-container .card img .card-title,
+.app .app__focus .app__focus-growth .app__focus-growth-container .card .card-body .card-title {
+  border-bottom: 2px solid #212529;
+  padding-bottom: 10px;
+}
+.app .app__focus .app__focus-groups {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #f3f3f3;
+}
+.app .app__focus .app__focus-groups h4 {
+  margin-bottom: 2rem;
+}
+.app .app__focus .app__focus-groups .app__focus-groups_container {
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.app .app__focus .app__focus-groups .app__focus-groups_container div img {
+  width: 100%;
+  height: 100%;
+  object-fit: none;
+}
+.app .app__focus .app__focus-groups .app__focus-groups_container div p {
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  color: #697f85;
+  margin-top: 0.5rem;
+}
+.app .app__footer h4 {
+  font-size: 20px;
+  color: #46b5d1;
+  text-align: left;
+}
+.app .app__footer .app__footer-enquire,
+.app .app__footer .app__footer-links {
+  padding: 0 4rem;
+}
+@media screen and (max-width: 768px) {
+  .app .app__footer .app__footer-enquire,
+  .app .app__footer .app__footer-links {
+    padding: 0 2rem;
+  }
+}
+.app .app__footer .app__footer-enquire {
+  justify-content: space-between;
+  padding-top: 2rem;
+  flex-wrap: wrap;
+}
+.app .app__footer .app__footer-enquire p {
+  font-size: 14px;
+  color: #697f85;
+}
+.app .app__footer .app__footer-enquire .app__footer-enquire_btn {
+  background-color: #46b5d1;
+  color: #fff;
+  width: 300px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.app .app__footer .app__footer-links {
+  margin-top: 2rem;
+}
+.app .app__footer .app__footer-links h4 {
+  border-left: 3px solid #46b5d1;
+  padding-left: 5px;
+  margin-bottom: 1rem;
+}
+.app .app__footer .app__footer-links .app__footer-links_container {
+  justify-content: space-between;
+  padding: 0 5rem 0 1rem;
+}
+.app .app__footer .app__footer-links .app__footer-links_container p {
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.app .app__footer .app__footer-links .app__footer-links_container i {
+  font-size: 12px;
+  margin: 0 5px 5px 0;
+}
+@media screen and (max-width: 1024px) {
+  .app .app__footer .app__footer-links .app__footer-links_container {
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+}
+.app .app__footer .app__footer-end {
+  flex-direction: column;
+  background-color: #f3f3f3;
+  padding: 2rem 0;
+}
+.app .app__footer .app__footer-end h4 {
+  color: #243167;
+}
+.app .app__footer .app__footer-end h5 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.app .app__footer .app__footer-end p {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
